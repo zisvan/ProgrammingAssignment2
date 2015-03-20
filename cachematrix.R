@@ -1,7 +1,14 @@
 ## Put comments here that give an overall description of what your
 ## functions do
 
+## A pair of functions compute the inverse of a matrix and store it 
+## in cache for fast access.
+
 ## Write a short comment describing this function
+
+## makeCacheMatrix() takes a matrix and returns a list of four 
+## functions to set the matrix, get the matrix, set its inverse, 
+## and get its inverse
 
 makeCacheMatrix <- function(x = matrix()) {
 
@@ -30,6 +37,10 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Write a short comment describing this function
+
+## cacheSolve() takes the output of makeCacheMatrix() as an argument
+## and returns the inverse, from cached data if it exists, or by computing
+## from scratch. It computing from scratch, the function caches the invserse.
 
 cacheSolve <- function(x, ...) {
     ## Return a matrix that is the inverse of 'x'
